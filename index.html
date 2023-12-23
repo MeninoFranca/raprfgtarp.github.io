@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mohave&family=Open+Sans:wght@300&family=Roboto&display=swap"
+        rel="stylesheet">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            overflow: hidden;
+            margin: auto;
+            width: 1200px;
+            height: 1600px;
+
+        }
+
+        .top-bar {
+            width: 100%;
+            height: 130px;
+            padding-top: 10px;
+            padding-left: 40px;
+            margin-bottom: 25px;
+
+        }
+
+        .conteudo {
+            width: 350px;
+            height: 123px;
+        }
+
+        .conteudo>h1 {
+            font-size: 23px;
+            position: relative;
+            color: rgb(241, 197, 3);
+            bottom: 95px;
+            left: 115px;
+        }
+
+        .conteudo>p {
+            font-size: 15px;
+            font-weight: bolder;
+            position: relative;
+            color: rgb(0, 0, 0);
+            bottom: 110px;
+            left: 115px;
+        }
+
+        .Form {
+            width: 90%;
+            padding: 2px;
+            margin: auto;
+            color: white;
+            background-color: rgb(3, 3, 73);
+            text-align: center;
+            font-size: 7px;
+            margin-bottom: 25px;
+        }
+
+        .Form2 {
+            width: 95%;
+            margin: auto;
+            color: white;
+            background-color: rgb(3, 3, 73);
+            text-align: right;
+            font-size: 7px;
+            margin-bottom: 25px;
+            padding-left: 10px;
+        }
+
+        .Form2>p {
+            font-size: 20px;
+            width: 60px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .identificacao {
+            width: 80%;
+            height: 300px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+            font-size: 20px;
+            position: relative;
+            top: 35px;
+        }
+
+        .identificacaoAvaliador {
+            border-left: 5px solid black;
+            padding-left: 20px;
+        }
+
+        .identificacaoAvaliado {
+            padding-right: 20px;
+        }
+
+        input {
+            background-color: rgba(185, 226, 240, 0.651);
+            width: 400px;
+            height: 30px;
+            font-size: 30px;
+        }
+
+        .avaliacao {
+            width: 100%;
+            height: 600px;
+            margin: 5px;
+            margin-bottom: 25px;
+        }
+
+        .checkbox-container {
+            cursor: pointer;
+            padding-left: 90px;
+            padding-bottom: 20px;
+            display: inline-block;
+        }
+
+        .form-field{
+                text-align: center;
+                min-width: 350px;
+                height: 25px;
+                border-radius: 0px;
+                font-weight: bolder;
+                border: 1px solid;
+                font-size: 21px;
+                padding: 12px 18px 12px 18px;
+                line-height: 30px;
+        }
+
+        #botoes {
+            position: relative;
+            top: 2px;
+            display: inline-block;
+            width: 750px;
+        }
+
+        .checkbox {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #333;
+            background-color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .checkbox.checked {
+            background-image: url(company_logo_601016.png);
+            background-size: 50px 50px;
+            background-repeat: no-repeat;
+        }
+
+        .Gerais {
+            margin-left: 9px;
+            width: 400px;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        .Gerais>h2 {
+            padding-bottom: 20px;
+            font-size: 24.5px;
+        }
+
+        .roda-pe {
+            padding-left: 10px;
+        }
+
+        .roda-pe>h2 {
+            width: 99%;
+            border-bottom: 3px solid black;
+        }
+
+        .roda-pe>input {
+            width: 96%;
+            background-color: white;
+            font-size: 21px;
+            text-align: center;
+            height: 250px;
+            font-weight: bolder;
+            border: 1px solid;
+            padding: 12px 18px 12px 18px;
+        }
+
+        .foradacurva {
+            position: fixed;
+            top: 70%;
+            left: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div class="conteudo">
+                <img width="100px" src="images-removebg-preview (1).png" alt="logo prf">
+                <h1>RELATORIO PRF</h1>
+                <P>RA</P>
+            </div>
+        </div>
+
+        <div class="Form">
+            <h1>FORMULÁRIO DE PATRULHAMENTO</h1>
+        </div>
+        <div class="identificacao">
+            <div class="identificacaoAvaliado">
+                <h3>AVALIADO</h3>
+                <p>QRA:</p> <input class="form-field">
+                <p>ID:</p> <input class="form-field">
+                <p>PATENTE:</p> <input class="form-field">
+            </div>
+            <div class="identificacaoAvaliador">
+                <h3>AVALIADOR</h3>
+                <p>QRA:</p> <input type="text" class="form-field">
+                <p>ID:</p> <input type="text" class="form-field">
+                <p>PATENTE:</p> <input type="text" class="form-field"/>
+
+            </div>
+        </div>
+        <div class="avaliacao">
+            <h2 style="padding-left: 10px;">AVALIAÇÃO</h2>
+            <div class="Form2">
+                <p style="padding-right: 45px;">Péssimo</p>
+                <p style="padding-right: 30px;">Ruim</p>
+                <p style="padding-right: 50px;">Sastifátorio</p>
+                <p style="padding-right: 37px;">Bom</p>
+                <p style="padding-right: 57px;">Excelente</p>
+            </div>
+            <div class="Gerais">
+                <h2>Aptidao de armas de fogo.</h2>
+                <h2>Modulução via COPOM.</h2>
+                <h2>Direção Defensiva e ofensiva.</h2>
+                <h2>Controle emocional.</h2>
+                <h2>Aptidao em abordagem.</h2>
+                <h2>Conhecimento das normas internas.</h2>
+            </div>
+            <div id="botoes">
+                <div id="checkbox-container"></div>
+            </div>
+            <script src="script.js"></script>
+        </div>
+        <div class="roda-pe">
+            <h2>OBSERVAÇÃO</h2>
+            <input type="text" class="form-field"></input>
+        </div>
+    </div>
+    <script src="download.js"></script>
+    <div class="foradacurva">
+        <img id="downloadButton" style="width: 100px; height: 100px;" src="upload-image-icon-png-22-removebg-preview.png" alt="upload">
+    </div>
+</body>
+
+</html>
